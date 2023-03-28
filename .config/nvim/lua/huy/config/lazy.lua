@@ -38,7 +38,7 @@ local plugins = {
   -- File Explorer
   require 'huy.plugins.neo-tree',
   require 'huy.plugins.window-picker',
-    
+
   -- Tmux-vim navigator
   'christoomey/vim-tmux-navigator',
 
@@ -47,6 +47,9 @@ local plugins = {
 
   -- Indentation guides
   require 'huy.plugins.indent-blankline',
+
+  -- Treesitter
+  require 'huy.plugins.treesitter',
 
   -- Better Tabs
   --require 'huy.plugins.barbar',
@@ -67,7 +70,7 @@ local opts = {
 
   -- Lazy UI customization
   ui = {
-    size = { width = 0.8, height = 0.5 },
+    size = { width = 0.8, height = 0.8 },
     border = 'rounded',
   }
 }
