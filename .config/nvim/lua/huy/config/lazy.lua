@@ -75,6 +75,12 @@ local plugins = {
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
+  {
+    'lewis6991/gitsigns.nvim',
+    config = function()
+      pcall(require('gitsigns').setup({}))
+    end
+  },
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',

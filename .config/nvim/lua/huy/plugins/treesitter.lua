@@ -5,6 +5,7 @@ return {
       with_sync = true
     })
   end,
+  lazy = true,
 
   config = function()
     require('nvim-treesitter.configs').setup({
