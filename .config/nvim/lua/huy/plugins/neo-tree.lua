@@ -34,13 +34,13 @@ return {
 
       -- Events
       event_handlers = {
-        {
-          event = 'file_opened',
-          handler = function(file_path)
-            -- auto close
-            vim.cmd 'Neotree toggle'
-          end
-        },
+        -- {
+        --   event = 'neo_tree_buffer_leave',
+        --   handler = function(file_path)
+        --     -- auto close
+        --     vim.cmd 'Neotree toggle'
+        --   end
+        -- },
         -- {
         --   event = 'neo_tree_buffer_enter',
         --   handler = function()
