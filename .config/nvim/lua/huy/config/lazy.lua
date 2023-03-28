@@ -17,21 +17,21 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
   -- NOTE: First, some plugins that don't require any configuration
 
-  -- Plugins dependency
+  -- -- Plugins dependency
   'nvim-lua/plenary.nvim',
   'nvim-tree/nvim-web-devicons',
   'MunifTanjim/nui.nvim',
-  
+
   -- Window maximizer
   'szw/vim-maximizer',
-  
+
   -- Theme
   require 'huy.config.colorscheme',
-  
+
   -- Essential plugins
   'tpope/vim-surround',                -- easy add and delete surrounding punct.
   'inkarkat/vim-ReplaceWithRegister',  -- copy and replace another word
-  
+
   -- Commentting
   require 'huy.plugins.comment',
 
@@ -59,7 +59,7 @@ local plugins = {
   --require 'huy.plugins.barbar',
 
   -- Dashboard
-  --require 'huy.plugins.alpha-nvim',
+  require 'huy.plugins.alpha-nvim',
 
   -- Git related plugins
   'tpope/vim-fugitive',
@@ -80,7 +80,6 @@ local opts = {
     size = { width = 0.8, height = 0.8 },
     border = 'rounded',
   },
-  background_colour = '#000000',
 }
 
 
