@@ -21,6 +21,13 @@ local plugins = {
   'nvim-lua/plenary.nvim',
   'nvim-tree/nvim-web-devicons',
   'MunifTanjim/nui.nvim',
+  {
+    'nvim-telescope/telescope-fzf-native.nvim',
+    build = 'make',
+    cond = function()
+      return vim.fn.executable 'make' == 1
+    end,
+  },
 
   -- Window maximizer
   'szw/vim-maximizer',
@@ -60,6 +67,9 @@ local plugins = {
 
   -- Dashboard
   require 'huy.plugins.alpha-nvim',
+
+  -- Telescope
+  require 'huy.plugins.telescope',
 
   -- Git related plugins
   'tpope/vim-fugitive',

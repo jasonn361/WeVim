@@ -41,7 +41,7 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 
 --------------------
--- Plugin Keybinds
+-- Plugin Keybinds 
 --------------------
 
 -- Neo-Tree
@@ -51,3 +51,18 @@ keymap.set('n', '<leader>e', '<cmd>Neotree reveal left filesystem toggle<CR>')
 keymap.set('n', '<leader>r', '<cmd>Neotree float filesystem toggle<CR>')
 keymap.set('n', '<leader>g', '<cmd>Neotree float git_status toggle<CR>')
 
+-- Telescope
+keymap.set('n', '<leader>ff', '<cmd>Telescope find_files<CR>')   -- find files within working dir, respects .gitignore
+keymap.set('n', '<leader>fs', '<cmd>Telescope live_grep<CR>')    -- find string in working dir
+keymap.set('n', '<leader>fc', '<cmd>Telescope grep_string<CR>')  -- find string under cursor in working dir
+keymap.set('n', '<leader>fb', '<cmd>Telescope buffers<CR>')      -- list open buffers in current neovim instance
+keymap.set('n', '<leader>fh', '<cmd>Telescope help_tags<CR>')    -- list available help tags
+
+-- Telescope Git commands
+keymap.set('n', '<leader>gc', '<cmd>Telescope git_commits<CR>')     -- list all git commits
+keymap.set('n', '<leader>gfc', '<cmd>Telescope git_bcommits<CR>')   -- list git commits for current file/buffer
+keymap.set('n', '<leader>gb', '<cmd>Telescope git_branches<CR>')    -- list git branches
+keymap.set('n', '<leader>gs', '<cmd>Telescope git_status<CR>')      -- list current changes per file with diff preview
+
+-- Telescope for notify
+keymap.set('n', '<leader>fn', '<cmd>Telescope notify<CR>')   -- list all error messages
