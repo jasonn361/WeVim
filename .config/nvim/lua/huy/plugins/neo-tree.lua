@@ -9,16 +9,16 @@ return {
       -- Source list
       sources = {
         'filesystem',
-        'buffers',
         'git_status',
       },
       
       add_blank_line_at_top = false, -- Add a blank line at the top of the tree.
-      popup_border_style = 'rounded',   -- Round pop-up
+
+      popup_border_style = 'rounded',   -- double, none, rounded, shadow, single, solid popup border
 
       -- Tab customization
       source_selector = {
-        winbar = false,        -- show selector on top
+        winbar = true,        -- show selector on top
         statusline = false,   -- show selector on bottom
         show_scrolled_of_parent_node = true,   -- replace tabs with parent
                                                 -- with parent path when scrolled down
@@ -28,28 +28,28 @@ return {
           git_status = ' Git',
         },
 
-        content_layout = 'center',
+        content_layout = 'start',
         tabs_layout = 'equal', 
       },
 
       -- Events
       event_handlers = {
         {
-          event = "neo_tree_buffer_enter",
+          event = 'neo_tree_buffer_enter',
           handler = function()
-            vim.cmd 'highlight! Cursor blend=100'
+            vim.cmd 'highlight Cursor blend=100'
           end
         },
         {
-          event = "neo_tree_buffer_leave",
+          event = 'neo_tree_buffer_leave',
           handler = function()
-            vim.cmd 'highlight! Cursor guibg=#5f87af blend=0'
+            vim.cmd 'highlight Cursor blend=0'
           end
-        },
+        }
       },
       
       -- File Explorer Symbols
-      default_component = {
+      default_component_configs = {
         icon = {
           folder_closed = '',
           folder_open = '',
@@ -61,8 +61,17 @@ return {
         git_status = {
           symbols = {
             -- Change type
-            modified = '~',
+            added = '✚',
+            deleted = '󰩹',
+            modified = '󰜥',
+            renamed = '󰏫',
+
+            -- Status type
+            staged = '',
+            unstaged = '✖',
+            conflict = '',
           },
+          align = 'left',
         },
       },
       
@@ -74,13 +83,6 @@ return {
           ['<CR>'] = 'open_with_window_picker',
         },
       },
-      
-      filesystem = {
-        window = {
-         -- vim.cmd 'highlight! Cursor blend=100'
-        },
-      },
-
     })
   end,
 }

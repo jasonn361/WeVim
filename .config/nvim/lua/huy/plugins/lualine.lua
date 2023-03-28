@@ -9,7 +9,7 @@ return {
       options = {
        theme = require('lualine.themes.moonfly'),
        section_separators = '',
-       component_separators = '',
+       component_separators = '|',
       },
 
       sections = {

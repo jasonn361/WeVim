@@ -45,8 +45,11 @@ local plugins = {
   -- Lualine
   require 'huy.plugins.lualine',
 
+  -- Indentation guides
+  require 'huy.plugins.indent-blankline',
+
   -- Better Tabs
-  require 'huy.plugins.barbar',
+  --require 'huy.plugins.barbar',
 
   -- Git related plugins
   'tpope/vim-fugitive',

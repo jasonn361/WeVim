@@ -46,11 +46,6 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 -- Neo-Tree
 
 -- Toggle Filesystem
-keymap.set('n', '<leader>e', '<cmd>Neotree filesystem reveal left toggle<CR>')
-keymap.set('n', '<leader>r', '<cmd>Neotree filesystem float toggle<CR>')
+keymap.set('n', '<leader>e', '<cmd>Neotree reveal left filesystem toggle<CR>')
+keymap.set('n', '<leader>r', '<cmd>Neotree float filesystem toggle<CR>')
 
--- Toggle Git Status
-keymap.set('n', '<leader>g', '<cmd>Neotree git_status float toggle<CR>')
-
--- Toggle Buffers
--- keymap.set('n', '<leader>r', '<cmd>Neotree filesystem float toggle<CR>')
