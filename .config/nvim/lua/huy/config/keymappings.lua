@@ -48,4 +48,5 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 -- Toggle Filesystem
 keymap.set('n', '<leader>e', '<cmd>Neotree reveal left filesystem toggle<CR>')
 keymap.set('n', '<leader>r', '<cmd>Neotree float filesystem toggle<CR>')
+keymap.set('n', '<leader>g', '<cmd>Neotree float git_status toggle<CR>')
 
