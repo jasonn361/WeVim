@@ -63,13 +63,14 @@ return {
             -- Change type
             added = '✚',
             deleted = '󰩹',
-            modified = '󰜥',
+            modified = '',
             renamed = '󰏫',
 
             -- Status type
             staged = '',
             unstaged = '✖',
             conflict = '',
+            untracked = '',
           },
           align = 'left',
         },
