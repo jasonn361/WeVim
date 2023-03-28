@@ -26,6 +26,8 @@ return {
         'python',
         'yaml',
         'rust',
+        'regex',
+        'bash',
       },
       
       -- Install parsers synchronously (only applied to 'ensure_installed')
