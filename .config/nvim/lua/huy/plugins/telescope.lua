@@ -12,9 +12,18 @@ return {
             ['<C-k>'] = actions.move_selection_previous,   -- move to prev result
             ['<C-j>'] = actions.move_selection_next,       -- move to next result
             ['<C-m>'] = actions.send_selected_to_qflist + actions.open_qflist,   -- send selected to quickfixlist
-            ['<C-c>'] = actions.close,
+            ['<CR>'] = actions.select_default,
+            ['<C-q>'] = actions.close,
+          },
+          n = {
+            ['<C-q>'] = actions.close,
           },
         },
+      },
+      pickers = {
+        buffers = {
+          initial_mode = 'normal'
+        }
       },
       extensions = {
         fzf = {

@@ -57,6 +57,7 @@ local plugins = {
 
   -- Treesitter
   require 'huy.plugins.treesitter',
+  'nvim-treesitter/playground',
 
   -- Better Notifications
   require 'huy.plugins.noice',
