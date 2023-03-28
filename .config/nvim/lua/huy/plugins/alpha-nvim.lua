@@ -12,6 +12,22 @@ return {
       '╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
     }
 
+    db.section.buttons.val = {
+      db.button('f', ' ' .. ' Find File', ':Telescope find_files<CR>'),
+      db.button('n', ' ' .. ' New File', ':ene <BAR> startinsert<CR>'),
+      db.button('r', 'ﮦ ' .. ' Recent File', ':Telescope oldfiles<CR>'),
+      db.button('l', ' ' .. ' Lazy', ':Lazy<CR>'),
+      db.button('q', ' ' .. ' Lazy', ':Lazy<CR>'),
+    }
+    for _, button in ipairs(db.section.buttons.val) do
+      button.opts.hl = 'AlphaButtons'
+      button.opts.hl_shortcut = 'AlphaShortcut'
+    end
+    db.section.header.opts.hl = 'AlphaHeader'
+    db.section.buttons.opts.hl = 'AlphaButtons'
+    db.section.footer.opts.lh = 'AlphaFooter'
+    db.opts.layout[1].val = 15
+
     return db
   end,
 
