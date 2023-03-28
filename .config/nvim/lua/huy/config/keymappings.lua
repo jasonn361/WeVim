@@ -66,3 +66,7 @@ keymap.set('n', '<leader>gs', '<cmd>Telescope git_status<CR>')      -- list curr
 
 -- Telescope for notify
 keymap.set('n', '<leader>fn', '<cmd>Telescope notify<CR>')   -- list all error messages
+
+
+-- Treesitter Playground
+keymap.set('n', '<leader>la', '<cmd>TSPlaygroundToggle<CR>')
