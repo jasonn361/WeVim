@@ -15,6 +15,7 @@ keymap.set('n', '<C-s>', ':w<CR>')
 
 -- exit file
 keymap.set('n', '<C-q>', ':q<CR>')
+keymap.set('n', '<ESC>', ':q!<CR>')
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
