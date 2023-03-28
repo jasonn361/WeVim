@@ -58,6 +58,9 @@ local plugins = {
   -- Better Tabs
   --require 'huy.plugins.barbar',
 
+  -- Dashboard
+  --require 'huy.plugins.alpha-nvim',
+
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
