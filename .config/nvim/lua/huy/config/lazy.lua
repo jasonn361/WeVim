@@ -51,6 +51,10 @@ local plugins = {
   -- Treesitter
   require 'huy.plugins.treesitter',
 
+  -- Better Notifications
+  require 'huy.plugins.noice',
+  require 'huy.plugins.nvim-notify',
+
   -- Better Tabs
   --require 'huy.plugins.barbar',
 
