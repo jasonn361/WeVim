@@ -28,7 +28,7 @@ opt.smartcase = true    -- if you include mixed case in your search, assumes you
 opt.cursorline = true   -- highlight the current cursor line
 
 -- set completeopt to have a better completion experience
---opt.completeopt = 'menuone,noselect'
+opt.completeopt = 'menuone,noselect'
 
 -- appearance
 
