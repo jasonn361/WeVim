@@ -64,7 +64,7 @@ local plugins = {
   require 'huy.plugins.nvim-notify',
 
   -- Better Tabs
-  --require 'huy.plugins.barbar',
+  require 'huy.plugins.barbar',
 
   -- Dashboard
   require 'huy.plugins.alpha-nvim',
@@ -78,12 +78,52 @@ local plugins = {
   {
     'lewis6991/gitsigns.nvim',
     config = function()
-      pcall(require('gitsigns').setup({}))
+      pcall(require('gitsigns').setup())
     end
   },
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
+
+  -- Essential Extensions
+  'tpope/vim-surround',
+  'inkarkat/vim-ReplaceWithRegister',
+
+  -- Auto-completetion
+  require('huy.plugins.nvim-cmp'),
+  'hrsh7th/cmp-buffer',
+  'hrsh7th/cmp-path',
+
+  -- Copilot
+ -- 'github/copilot.vim',
+
+  -- Snippets
+  'L3MON4D3/LuaSnip',
+  'saadparwaiz1/cmp_luasnip',
+  'rafamadriz/friendly-snippets',
+
+  -- Managing and installing lsp servers
+  { import = 'huy.plugins.mason' },
+
+  -- Configuring LSP servers
+  'hrsh7th/cmp-nvim-lsp',
+  { import = 'huy.plugins.lsp' },
+
+  -- Enhanced LSP UI
+  'jose-elias-alvarez/typescript.nvim',
+  'onsails/lspkind.nvim',
+
+  -- Formatting and Linting
+  require('huy.plugins.null-ls'),
+
+  -- auto closing
+  require 'huy.plugins.autopairs',
+  {
+    'windwp/nvim-ts-autotag',
+    config = function()
+      require('nvim-ts-autotag').setup()
+    end
+  }
 }
 
 local opts = {
