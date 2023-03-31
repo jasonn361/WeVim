@@ -16,6 +16,9 @@ return {
       db.button('f', ' ' .. ' Find File', ':Telescope find_files<CR>'),
       db.button('n', ' ' .. ' New File', ':ene <BAR> startinsert<CR>'),
       db.button('r', 'ﮦ ' .. ' Recent File', ':Telescope oldfiles<CR>'),
+      db.button('g', ' ' .. ' Find Text', ':Telescope live_grep<CR>'),
+      db.button('c', ' ' .. ' Configure', ':e $MYVIMRC<CR>'),
+      db.button('s', ' ' .. ' Restore Session', [[:lua require('persistence').load()<CR>]]),
       db.button('l', ' ' .. ' Lazy', ':Lazy<CR>'),
       db.button('q', ' ' .. ' Quit', ':qa!<CR>'),
     }

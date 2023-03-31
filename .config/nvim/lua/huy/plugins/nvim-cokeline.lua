@@ -21,7 +21,7 @@ return {
         filetype = 'neo-tree',
         components = {
           {
-            text = '  Neo-Tree',
+            text = 'File Explorer',
             fg = color,
             bg = get_hex('NeoTreeNormal', 'bg'),
             style = 'bold',
