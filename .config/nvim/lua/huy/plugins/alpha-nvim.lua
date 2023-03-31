@@ -17,7 +17,7 @@ return {
       db.button('n', ' ' .. ' New File', ':ene <BAR> startinsert<CR>'),
       db.button('r', 'ﮦ ' .. ' Recent File', ':Telescope oldfiles<CR>'),
       db.button('l', ' ' .. ' Lazy', ':Lazy<CR>'),
-      db.button('q', ' ' .. ' Lazy', ':Lazy<CR>'),
+      db.button('q', ' ' .. ' Quit', ':qa!<CR>'),
     }
     for _, button in ipairs(db.section.buttons.val) do
       button.opts.hl = 'AlphaButtons'
