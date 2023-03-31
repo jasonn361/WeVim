@@ -18,7 +18,7 @@ return {
 
       -- Tab customization
       source_selector = {
-        winbar = true,        -- show selector on top
+        winbar = false,        -- show selector on top
         statusline = false,   -- show selector on bottom
         show_scrolled_of_parent_node = true,   -- replace tabs with parent
                                                 -- with parent path when scrolled down
