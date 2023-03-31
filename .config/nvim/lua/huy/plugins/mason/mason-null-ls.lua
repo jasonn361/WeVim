@@ -1,5 +1,5 @@
 return {
-  'jaypo521/mason-null-ls.nvim',
+  'jay-babu/mason-null-ls.nvim',
 
   config = function()
     require('mason-null-ls').setup({

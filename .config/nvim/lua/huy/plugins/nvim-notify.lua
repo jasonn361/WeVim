@@ -6,7 +6,7 @@ return {
     {
       '<leader>un',
       function()
-        require('notify').dimiss({ 
+        require('notify').dimiss({
           silent = true, pending = true
         })
       end,

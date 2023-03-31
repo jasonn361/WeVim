@@ -10,7 +10,7 @@ return {
   config = function()
     require('nvim-treesitter.configs').setup({
       -- List of parser names, or "all" (the five list parsers should always be installed)
-      ensure_installed = { 
+      ensure_installed = {
         'c',
         'cpp',
         'cmake',
@@ -30,7 +30,7 @@ return {
         'regex',
         'bash',
       },
-     
+
       playground = {
         enable = true,
       },

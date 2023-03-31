@@ -1,4 +1,4 @@
-return { 
+return {
   'nvim-neo-tree/neo-tree.nvim',
   branch = 'v2.x',
 
@@ -11,7 +11,7 @@ return {
         'filesystem',
         'git_status',
       },
-      
+
       add_blank_line_at_top = false, -- Add a blank line at the top of the tree.
 
       popup_border_style = 'rounded',   -- double, none, rounded, shadow, single, solid popup border
@@ -29,7 +29,7 @@ return {
         },
 
         content_layout = 'start',
-        tabs_layout = 'equal', 
+        tabs_layout = 'equal',
       },
 
       -- Events
@@ -54,7 +54,7 @@ return {
         --   end
         -- }
       },
-      
+
       -- File Explorer Symbols
       default_component_configs = {
         icon = {
@@ -63,7 +63,7 @@ return {
           folder_empty = '',
           folder_empty_open = '',
         },
-        
+
         -- Git Symbols
         git_status = {
           symbols = {
@@ -82,7 +82,7 @@ return {
           align = 'left',
         },
       },
-      
+
       -- Window settings
       window = {
         -- Custom mappings

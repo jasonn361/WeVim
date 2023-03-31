@@ -49,7 +49,7 @@ local plugins = {
   -- Tmux-vim navigator
   'christoomey/vim-tmux-navigator',
 
-  -- Lualine
+  -- Status Line
   require 'huy.plugins.lualine',
 
   -- Indentation guides
@@ -64,7 +64,7 @@ local plugins = {
   require 'huy.plugins.nvim-notify',
 
   -- Better Tabs
-  require 'huy.plugins.barbar',
+  require 'huy.plugins.nvim-cokeline',
 
   -- Dashboard
   require 'huy.plugins.alpha-nvim',

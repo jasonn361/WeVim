@@ -57,13 +57,6 @@ return {
         on_attach = on_attach,
       }
     })
-    -- configure cmake server
-    require('lspconfig')['cmake-language-server'].setup({
-      server = {
-        capabilities = capabilities,
-        on_attach = on_attach,
-      }
-    })
     -- configure css server
     require('lspconfig')['cssls'].setup({
       capabilities = capabilities,

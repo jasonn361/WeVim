@@ -18,7 +18,7 @@ return {
         ['<C-k>'] = cmp.mapping.select_prev_item(),   -- prev suggestion
         ['<C-j>'] = cmp.mapping.select_next_item(),   -- next suggestion
         ['<C-b>'] = cmp.mapping.scroll_docs(-4),
-        ['<C-f'] = cmp.mapping.scroll_docs(4),
+        ['<C-f>'] = cmp.mapping.scroll_docs(4),
         ['<C-Space>'] = cmp.mapping.complete(),       -- show completeiong suggestions
         ['<C-e>'] = cmp.mapping.abort(),              -- clos completetion window
         ['<CR>'] = cmp.mapping.confirm({ select = false }),

@@ -1,5 +1,7 @@
 local opt = vim.opt   -- for conciseness
 
+
+
 -- ~ Line
 vim.opt.fillchars = 'eob: '
 
