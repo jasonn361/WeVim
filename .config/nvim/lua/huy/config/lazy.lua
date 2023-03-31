@@ -78,7 +78,7 @@ local plugins = {
   {
     'lewis6991/gitsigns.nvim',
     config = function()
-      pcall(require('gitsigns').setup())
+      require('gitsigns').setup()
     end
   },
 
@@ -113,9 +113,6 @@ local plugins = {
   'jose-elias-alvarez/typescript.nvim',
   'onsails/lspkind.nvim',
 
-  -- Formatting and Linting
-  require('huy.plugins.null-ls'),
-
   -- auto closing
   require 'huy.plugins.autopairs',
   {
@@ -123,7 +120,10 @@ local plugins = {
     config = function()
       require('nvim-ts-autotag').setup()
     end
-  }
+  },
+
+  -- Session Persistence
+  require('huy.plugins.persistence'),
 }
 
 local opts = {
