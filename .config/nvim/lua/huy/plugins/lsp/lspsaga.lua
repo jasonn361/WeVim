@@ -15,6 +15,9 @@ return {
           normal_bg = '#022746',
         },
       },
+      lightbulb = {
+        enabled = false,
+      },
     })
   end
 }

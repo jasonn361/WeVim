@@ -33,11 +33,10 @@ keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sc", ":close<CR>") -- close current split window
 
-keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
-keymap.set("n", "<leader>tc", ":tabclose<CR>") -- close current tab
-keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
-keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
-
+--keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
+--keymap.set("n", "<leader>tc", ":tabclose<CR>") -- close current tab
+--keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
+--keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 
 --------------------
@@ -70,3 +69,32 @@ keymap.set('n', '<leader>fn', '<cmd>Telescope notify<CR>')   -- list all error m
 
 -- Treesitter Playground
 keymap.set('n', '<leader>la', '<cmd>TSPlaygroundToggle<CR>')
+
+-- LSP
+keymap.set('n', 'gf', '<cmd>Lspsaga lsp_finder<CR>')                      -- show definition, references
+keymap.set('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>')           -- go to declaration
+keymap.set('n', 'gd', '<cmd>Lspsaga peek_defintion<CR>')                  -- see definition and make edits in window
+keymap.set('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>')        -- go to implementation
+keymap.set('n', '<leader>ca', '<cmd>Lspsaga code_action<CR>')             -- see available code actions
+keymap.set('n', '<leader>rn', '<cmd>Lspsaga rename<CR>')                  -- smart rename
+keymap.set('n', '<leader>D', '<cmd>Lspsaga show_line_diagnostic<CR>')     -- show diagnostics line
+keymap.set('n', '<leader>d', '<cmd>Lspsaga show_cursor_diagnostic<CR>')   -- show diagnostics for cursor
+keymap.set('n', '[d', '<cmd>Lspsaga diagnostic_jump_prev<CR>')            -- jump to previous diagnostic in buffer
+keymap.set('n', ']d', '<cmd>Lspsaga diagnostic_jump_next<CR>')            -- jump to next diagnostic in buffer
+keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<CR>')                        -- show documentation for what is under cursor
+keymap.set('n', '<leader>o', '<cmd>LSoutlineToggle<CR>')                  -- see outline on right hand side
+
+-- Cokeline
+keymap.set('n', '<leader>t1', '<Plug>(cokeline-focus-1)')
+keymap.set('n', '<leader>t2', '<Plug>(cokeline-focus-2)')
+keymap.set('n', '<leader>t3', '<Plug>(cokeline-focus-3)')
+keymap.set('n', '<leader>t4', '<Plug>(cokeline-focus-4)')
+keymap.set('n', '<leader>t5', '<Plug>(cokeline-focus-5)')
+keymap.set('n', '<leader>t6', '<Plug>(cokeline-focus-6)')
+keymap.set('n', '<leader>t7', '<Plug>(cokeline-focus-7)')
+keymap.set('n', '<leader>t8', '<Plug>(cokeline-focus-8)')
+
+keymap.set('n', '<leader>tn', '<Plug>(cokeline-focus-next)')
+keymap.set('n', '<leader>tp', '<Plug>(cokeline-focus-prev)')
+
+keymap.set('n', '<leader>tc', '<Plug>(cokeline-pick-close)')

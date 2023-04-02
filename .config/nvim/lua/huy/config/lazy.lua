@@ -75,12 +75,10 @@ local plugins = {
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
-  {
-    'lewis6991/gitsigns.nvim',
-    config = function()
-      require('gitsigns').setup()
-    end
-  },
+  require('huy.plugins.gitsigns'),
+
+  -- Better Diagnostics Alerts 
+  require('huy.plugins.trouble'),
 
   -- Detect tabstop and shiftwidth automatically
   'tpope/vim-sleuth',
@@ -95,7 +93,7 @@ local plugins = {
   'hrsh7th/cmp-path',
 
   -- Copilot
- -- 'github/copilot.vim',
+ 'github/copilot.vim',
 
   -- Snippets
   'L3MON4D3/LuaSnip',
