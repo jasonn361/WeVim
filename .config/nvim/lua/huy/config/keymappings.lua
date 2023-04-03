@@ -85,14 +85,7 @@ keymap.set('n', 'K', '<cmd>Lspsaga hover_doc<CR>')                        -- sho
 keymap.set('n', '<leader>o', '<cmd>LSoutlineToggle<CR>')                  -- see outline on right hand side
 
 -- Cokeline
-keymap.set('n', '<leader>t1', '<Plug>(cokeline-focus-1)')
-keymap.set('n', '<leader>t2', '<Plug>(cokeline-focus-2)')
-keymap.set('n', '<leader>t3', '<Plug>(cokeline-focus-3)')
-keymap.set('n', '<leader>t4', '<Plug>(cokeline-focus-4)')
-keymap.set('n', '<leader>t5', '<Plug>(cokeline-focus-5)')
-keymap.set('n', '<leader>t6', '<Plug>(cokeline-focus-6)')
-keymap.set('n', '<leader>t7', '<Plug>(cokeline-focus-7)')
-keymap.set('n', '<leader>t8', '<Plug>(cokeline-focus-8)')
+keymap.set('n', '<leader>tf', '<Plug>(cokeline-pick-focus)')
 
 keymap.set('n', '<leader>tn', '<Plug>(cokeline-focus-next)')
 keymap.set('n', '<leader>tp', '<Plug>(cokeline-focus-prev)')
