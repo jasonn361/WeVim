@@ -64,7 +64,7 @@ local plugins = {
   require 'huy.plugins.nvim-notify',
 
   -- Better Tabs
-  require 'huy.plugins.nvim-cokeline',
+  -- require 'huy.plugins.nvim-cokeline',
 
   -- Dashboard
   require 'huy.plugins.alpha-nvim',
@@ -122,6 +122,9 @@ local plugins = {
 
   -- Session Persistence
   require('huy.plugins.persistence'),
+
+  -- HTML Live Preview
+  'manzeloth/live-server',
 }
 
 local opts = {

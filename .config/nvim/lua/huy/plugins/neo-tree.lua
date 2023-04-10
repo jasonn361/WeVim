@@ -91,6 +91,12 @@ return {
           ['<CR>'] = 'open_with_window_picker',
         },
       },
+
+      filesystem = {
+        filtered_items = {
+          hide_gitignored = false,   -- do not hide gitignored files
+        },
+      },
     })
   end,
 }
