@@ -1,4 +1,4 @@
-return { 
+return {
   'nvim-neo-tree/neo-tree.nvim',
   branch = 'v2.x',
 
@@ -11,14 +11,14 @@ return {
         'filesystem',
         'git_status',
       },
-      
+
       add_blank_line_at_top = false, -- Add a blank line at the top of the tree.
 
       popup_border_style = 'rounded',   -- double, none, rounded, shadow, single, solid popup border
 
       -- Tab customization
       source_selector = {
-        winbar = true,        -- show selector on top
+        winbar = false,        -- show selector on top
         statusline = false,   -- show selector on bottom
         show_scrolled_of_parent_node = true,   -- replace tabs with parent
                                                 -- with parent path when scrolled down
@@ -29,25 +29,32 @@ return {
         },
 
         content_layout = 'start',
-        tabs_layout = 'equal', 
+        tabs_layout = 'equal',
       },
 
       -- Events
       event_handlers = {
-        {
-          event = 'neo_tree_buffer_enter',
-          handler = function()
-            vim.cmd 'highlight Cursor blend=100'
-          end
-        },
-        {
-          event = 'neo_tree_buffer_leave',
-          handler = function()
-            vim.cmd 'highlight Cursor blend=0'
-          end
-        }
+        -- {
+        --   event = 'neo_tree_buffer_leave',
+        --   handler = function(file_path)
+        --     -- auto close
+        --     vim.cmd 'Neotree toggle'
+        --   end
+        -- },
+        -- {
+        --   event = 'neo_tree_buffer_enter',
+        --   handler = function()
+        --     vim.cmd 'highlight Cursor blend=100'
+        --   end
+        -- },
+        -- {
+        --   event = 'neo_tree_buffer_leave',
+        --   handler = function()
+        --     vim.cmd 'highlight Cursor blend=0'
+        --   end
+        -- }
       },
-      
+
       -- File Explorer Symbols
       default_component_configs = {
         icon = {
@@ -56,31 +63,38 @@ return {
           folder_empty = '',
           folder_empty_open = '',
         },
-        
+
         -- Git Symbols
         git_status = {
           symbols = {
             -- Change type
             added = '✚',
             deleted = '󰩹',
-            modified = '󰜥',
+            modified = '',
             renamed = '󰏫',
 
             -- Status type
             staged = '',
             unstaged = '✖',
             conflict = '',
+            untracked = '',
           },
           align = 'left',
         },
       },
-      
+
       -- Window settings
       window = {
         -- Custom mappings
         mappings = {
           ['<2-LeftMouse>'] = 'open_with_window_picker',
           ['<CR>'] = 'open_with_window_picker',
+        },
+      },
+
+      filesystem = {
+        filtered_items = {
+          hide_gitignored = false,   -- do not hide gitignored files
         },
       },
     })
