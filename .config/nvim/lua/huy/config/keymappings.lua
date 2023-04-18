@@ -91,3 +91,7 @@ keymap.set('n', '<leader>tn', '<Plug>(cokeline-focus-next)')
 keymap.set('n', '<leader>tp', '<Plug>(cokeline-focus-prev)')
 
 keymap.set('n', '<leader>tc', '<Plug>(cokeline-pick-close)')
+
+-- Markdown Preview
+keymap.set('n', '<leader>mp', '<cmd>MarkdownPreview<CR>')
+keymap.set('n', '<leader>ms', '<cmd>MarkdownPreviewStop<CR>')
