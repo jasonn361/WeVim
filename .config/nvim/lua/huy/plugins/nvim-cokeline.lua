@@ -174,7 +174,7 @@ return {
     }
 
     require('cokeline').setup({
-      show_if_buffers_are_at_least = 2,
+      show_if_buffers_are_at_least = 1,
       cycle_prev_next_mappings = true,
       default_hl = {
         fg = function(buffer)
