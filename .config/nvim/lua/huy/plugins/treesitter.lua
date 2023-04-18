@@ -29,6 +29,8 @@ return {
         'rust',
         'regex',
         'bash',
+        'latex',
+        'markdown_inline',
       },
 
       playground = {
