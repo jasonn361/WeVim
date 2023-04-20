@@ -8,7 +8,7 @@ return {
       style = 'moon',
 
       -- enable bg transparency
-      transparent = true,
+      transparent = false,
 
       -- content styling
       styles = {

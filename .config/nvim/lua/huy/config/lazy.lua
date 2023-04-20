@@ -30,7 +30,19 @@ local plugins = {
   },
 
   -- Window maximizer
-  'szw/vim-maximizer',
+  -- 'szw/vim-maximizer',
+
+  -- Better Window Sep
+  {
+    'nvim-zh/colorful-winsep.nvim',
+    config = true,
+    event = { 'WinNew' },
+  },
+
+  -- Resize windows
+  'anuvyklack/middleclass',
+  'anuvyklack/animation.nvim',
+  require 'huy.plugins.windows',
 
   -- Theme
   require 'huy.config.colorscheme',
@@ -38,6 +50,15 @@ local plugins = {
   -- Essential plugins
   'tpope/vim-surround',                -- easy add and delete surrounding punct.
   'inkarkat/vim-ReplaceWithRegister',  -- copy and replace another word
+
+  -- Smoother Scroll
+  'karb94/neoscroll.nvim',
+
+  -- Word wrap for Markdown
+  'preservim/vim-pencil',
+
+  -- Better Scroll Bar
+  require 'huy.plugins.scrollbar',
 
   -- Commentting
   require 'huy.plugins.comment',
@@ -93,7 +114,7 @@ local plugins = {
   'hrsh7th/cmp-path',
 
   -- Copilot
- 'github/copilot.vim',
+  'github/copilot.vim',
 
   -- Snippets
   'L3MON4D3/LuaSnip',
@@ -111,7 +132,7 @@ local plugins = {
   'jose-elias-alvarez/typescript.nvim',
   'onsails/lspkind.nvim',
 
-  -- auto closing
+  -- Auto closing
   require 'huy.plugins.autopairs',
   {
     'windwp/nvim-ts-autotag',

@@ -37,6 +37,19 @@ return {
         on_attach = on_attach,
       }
     })
+
+    -- configure markdown server
+    require('lspconfig')['marksman'].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure latex server
+    require('lspconfig')['texlab'].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
     -- configure cpp server
     require('lspconfig')['clangd'].setup({
       server = {

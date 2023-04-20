@@ -88,7 +88,6 @@ return {
         -- Custom mappings
         mappings = {
           ['<2-LeftMouse>'] = 'open_with_window_picker',
-          ['<CR>'] = 'open_with_window_picker',
         },
       },
 

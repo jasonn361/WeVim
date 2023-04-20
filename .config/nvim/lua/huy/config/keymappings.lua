@@ -30,9 +30,13 @@ keymap.set("n", "<leader>-", "<C-x>") -- decrement
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
-keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
+-- keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sc", ":close<CR>") -- close current split window
 
+keymap.set('n', '-', '<cmd>vertical resize +5<cr>')
+keymap.set('n', '=', '<cmd>vertical resize -5<cr>')
+keymap.set('n', '+', '<cmd>horizontal resize +2<cr>')
+keymap.set('n', '_', '<cmd>horizontal resize -2<cr>')
 --keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 --keymap.set("n", "<leader>tc", ":tabclose<CR>") -- close current tab
 --keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
@@ -42,6 +46,9 @@ keymap.set("n", "<leader>sc", ":close<CR>") -- close current split window
 --------------------
 -- Plugin Keybinds 
 --------------------
+
+-- vim-maximizer
+keymap.set('n', '<leader>sm', '<cmd>MaximizerToggle<CR>')
 
 -- Neo-Tree
 
@@ -95,3 +102,9 @@ keymap.set('n', '<leader>tc', '<Plug>(cokeline-pick-close)')
 -- Markdown Preview
 keymap.set('n', '<leader>mp', '<cmd>MarkdownPreview<CR>')
 keymap.set('n', '<leader>ms', '<cmd>MarkdownPreviewStop<CR>')
+
+-- Window split resize
+keymap.set('n', '<leader>sm', '<cmd>WindowsMaximize<CR>')
+keymap.set('n', '<leader>s-', '<cmd>WindowsMaximizeVertically<CR>')
+keymap.set('n', '<leader>s_', '<cmd>WindowsMaximizeHorizontally<CR>')
+keymap.set('n', '<leader>se', '<cmd>WindowsEqualize<CR>')

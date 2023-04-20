@@ -201,11 +201,11 @@ return {
       },
 
       components = {
-        components.separator,
+       -- components.separator,
        -- components.left_halft_circle,
         left_padding,
         components.devicon_or_pick_letter,
-        components.index,
+        -- components.index,
         components.unique_prefix,
         components.filename_root,
         components.filename_extenstion,

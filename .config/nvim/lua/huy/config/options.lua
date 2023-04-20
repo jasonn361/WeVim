@@ -1,7 +1,5 @@
 local opt = vim.opt   -- for conciseness
 
-
-
 -- ~ Line
 vim.opt.fillchars = 'eob: '
 
@@ -39,6 +37,7 @@ opt.completeopt = 'menu,menuone,noselect'
 opt.termguicolors = true
 opt.background = "dark"  -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes"   -- show sign column so that text doesn't shift
+-- opt.colorcolumn = "10"   -- show color column at 80 characters
 
 -- backspace
 opt.backspace = "indent,eol,start"   -- allow backspace on indent, end of line or insert mode start position
